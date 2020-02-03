@@ -1,0 +1,19 @@
+1580128498575	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileiG2y9P"
+1580128500536	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1580128500622	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1580128500623	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1580128500623	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1580128500624	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1580128519848	Marionette	INFO	Listening on port 39573
+1580128519955	Marionette	WARN	TLS certificate errors will be ignored for this session
+Sandbox: seccomp sandbox violation: pid 78, tid 78, syscall 16, args 2 21523 140736601737896 0 1 140736601738144.
+Sandbox: seccomp sandbox violation: pid 148, tid 148, syscall 16, args 2 21523 140725129766872 0 1 140725129767120.
+Sandbox: seccomp sandbox violation: pid 94, tid 94, syscall 16, args 2 21523 140730429819848 0 1 140730429820096.
+Gdk-Message: 12:35:31.975: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :99.
+
+Gdk-Message: 12:35:31.977: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :99.
+
+Gdk-Message: 12:35:31.976: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :99.
+
+Gdk-Message: 12:35:31.976: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :99.
+

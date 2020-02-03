@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.6 on linux)" generated="20200121 12:18:53.318" rpa="false">
+<suite id="s1" name="Tests" source="/opt/robotframework/tests">
+<suite id="s1-s1" name="Test" source="/opt/robotframework/tests/Test.robot">
+<test id="s1-s1-t1" name="Open Site">
+<kw name="Open chrome">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys</arg>
+</arguments>
+<assign>
+<var>${options}</var>
+</assign>
+<msg timestamp="20200121 12:18:53.660" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f4b436b4950&gt;</msg>
+<status status="PASS" starttime="20200121 12:18:53.657" endtime="20200121 12:18:53.660"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${options}</arg>
+<arg>add_experimental_option</arg>
+<arg>prefs</arg>
+<arg>${ACCEPT_LANGUAGES}</arg>
+</arguments>
+<status status="PASS" starttime="20200121 12:18:53.660" endtime="20200121 12:18:53.660"></status>
+</kw>
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>Chrome</arg>
+<arg>chrome_options=${options}</arg>
+</arguments>
+<msg timestamp="20200121 12:18:53.661" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20200121 12:18:53.661" endtime="20200121 12:18:55.654"></status>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<arguments>
+<arg>%{SCREEN_WIDTH}</arg>
+<arg>%{SCREEN_HEIGHT}</arg>
+</arguments>
+<status status="PASS" starttime="20200121 12:18:55.655" endtime="20200121 12:18:55.765"></status>
+</kw>
+<status status="PASS" starttime="20200121 12:18:53.657" endtime="20200121 12:18:55.766"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20200121 12:18:55.766" level="INFO">Opening url 'https://wp.pl'</msg>
+<status status="PASS" starttime="20200121 12:18:55.766" endtime="20200121 12:18:57.423"></status>
+</kw>
+<status status="PASS" starttime="20200121 12:18:53.652" endtime="20200121 12:18:57.424" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200121 12:18:53.354" endtime="20200121 12:18:57.426"></status>
+</suite>
+<status status="PASS" starttime="20200121 12:18:53.319" endtime="20200121 12:18:57.458"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Test">Tests.Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

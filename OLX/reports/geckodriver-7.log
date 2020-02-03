@@ -1,0 +1,20 @@
+1580129033248	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilem232bO"
+1580129034138	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1580129034221	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1580129034224	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1580129034224	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1580129034225	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1580129039320	Marionette	INFO	Listening on port 45137
+1580129039424	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static-olxeu.akamaized.net/static/olxpl/packed/swb230a698bdc1258da92588e783d91171.js, line 105: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://static-olxeu.akamaized.net/static/olxpl/packed/swb230a698bdc1258da92588e783d91171.js, line 105: Error: WebGL warning: <SetDimensions>: Refused to create native OpenGL context because of blacklist entry: FEATURE_FAILURE_GLXTEST_FAILED
+JavaScript warning: https://static-olxeu.akamaized.net/static/olxpl/packed/swb230a698bdc1258da92588e783d91171.js, line 105: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Refused to create native OpenGL context because of blacklist entry: FEATURE_FAILURE_GLXTEST_FAILED
+* Exhausted GL driver options.
+Gdk-Message: 12:44:10.295: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :99.
+
+Sandbox: seccomp sandbox violation: pid 75, tid 75, syscall 16, args 2 21523 140732207911544 0 1 140732207911792.
+Sandbox: seccomp sandbox violation: pid 140, tid 140, syscall 16, args 2 21523 140736944000136 0 1 140736944000384.
+Sandbox: seccomp sandbox violation: pid 90, tid 90, syscall 16, args 2 21523 140726580952360 0 1 140726580952608.
+Gdk-Message: 12:44:10.307: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :99.
+

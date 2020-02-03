@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.6 on linux)" generated="20200127 13:59:10.955" rpa="false">
+<suite id="s1" name="Tests" source="/opt/robotframework/tests">
+<suite id="s1-s1" name="Tests" source="/opt/robotframework/tests/tests">
+<suite id="s1-s1-s1" name="Olx" source="/opt/robotframework/tests/tests/Olx.robot">
+<test id="s1-s1-s1-t1" name="User check does searchbox works correctly">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://www.olx.pl</arg>
+<arg>firefox</arg>
+</arguments>
+<msg timestamp="20200127 13:59:11.330" level="INFO">Opening browser 'firefox' to base url 'https://www.olx.pl'.</msg>
+<msg timestamp="20200127 13:59:11.330" level="INFO">Firefox driver log is always forced to to: /opt/robotframework/reports/geckodriver-18.log</msg>
+<status status="PASS" starttime="20200127 13:59:11.329" endtime="20200127 13:59:20.371"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Mój OLX</arg>
+<arg>timeout=5</arg>
+</arguments>
+<status status="PASS" starttime="20200127 13:59:20.371" endtime="20200127 13:59:20.497"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=headerSearch</arg>
+<arg>Nintendo Switch</arg>
+<arg>Clear=true</arg>
+</arguments>
+<msg timestamp="20200127 13:59:20.497" level="INFO">Typing text 'Nintendo Switch' into text field 'id=headerSearch'.</msg>
+<status status="PASS" starttime="20200127 13:59:20.497" endtime="20200127 13:59:20.632"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=submit-searchmain</arg>
+</arguments>
+<msg timestamp="20200127 13:59:20.634" level="INFO">Clicking button 'id=submit-searchmain'.</msg>
+<status status="PASS" starttime="20200127 13:59:20.632" endtime="20200127 13:59:23.457"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Wyróżnione ogłoszenia</arg>
+<arg>timeout=10</arg>
+</arguments>
+<status status="PASS" starttime="20200127 13:59:23.458" endtime="20200127 13:59:23.630"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="offers_table"]/tbody/tr[3]/td/div/table/tbody/tr[1]/td[2]/div/h3/a</arg>
+</arguments>
+<msg timestamp="20200127 13:59:23.631" level="INFO">Clicking link 'xpath=//*[@id="offers_table"]/tbody/tr[3]/td/div/table/tbody/tr[1]/td[2]/div/h3/a'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200127 13:59:24.509" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200127 13:59:24.018" endtime="20200127 13:59:24.509"></status>
+</kw>
+<msg timestamp="20200127 13:59:24.530" level="FAIL">ElementClickInterceptedException: Message: Element &lt;a class="marginright5 link linkWithHash detailsLink" href="https://www.olx.pl/oferta/super-mario-odyssey-switch-nintendo-CID99-IDDpyGg.html#f751b53233"&gt; is not clickable at point (502,888) because another element &lt;div id="cookiesBar" class="topinfo rel"&gt; obscures it
+</msg>
+<status status="FAIL" starttime="20200127 13:59:23.631" endtime="20200127 13:59:24.530"></status>
+</kw>
+<doc>User open OLX.pl site, next looking for Nintendo Switch via searchbox and check if returned results are correct</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="FAIL" starttime="20200127 13:59:11.322" endtime="20200127 13:59:24.530" critical="yes">ElementClickInterceptedException: Message: Element &lt;a class="marginright5 link linkWithHash detailsLink" href="https://www.olx.pl/oferta/super-mario-odyssey-switch-nintendo-CID99-IDDpyGg.html#f751b53233"&gt; is not clickable at point (502,888) because another element &lt;div id="cookiesBar" class="topinfo rel"&gt; obscures it
+</status>
+</test>
+<doc>My first test</doc>
+<status status="FAIL" starttime="20200127 13:59:10.999" endtime="20200127 13:59:24.534"></status>
+</suite>
+<status status="FAIL" starttime="20200127 13:59:10.991" endtime="20200127 13:59:24.542"></status>
+</suite>
+<status status="FAIL" starttime="20200127 13:59:10.956" endtime="20200127 13:59:24.568"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1">Smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" id="s1-s1" name="Tests">Tests.Tests</stat>
+<stat pass="0" fail="1" id="s1-s1-s1" name="Olx">Tests.Tests.Olx</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,3 @@
+1580129274700	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilewY2rjA"
+Unable to init server: Could not connect: Connection refused
+Error: cannot open display: :99
